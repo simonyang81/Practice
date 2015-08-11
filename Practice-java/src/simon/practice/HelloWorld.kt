@@ -5,5 +5,7 @@ package simon.practice
  */
 
 fun main(arg: Array<String>) {
-    println("Hello World...");
+
+    var name = "Simon"
+    println("Hello, ${name}")
 }
