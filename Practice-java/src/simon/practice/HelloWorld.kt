@@ -1,7 +1,5 @@
 package simon.practice
 
-import kotlin.Function
-
 /**
  * Created by simon on 8/11/15.
  */
@@ -25,6 +23,25 @@ fun main(arg: Array<String>) {
 
     println("\n--->> Looper <<---")
     f.looper()
+
+    println("\n--->> Contains <<---")
+    f.containsFunc("My name is Simon", "simon");
+
+    println("\n--->> Arrays <<---")
+    println(f.arrayFunc())
+
+    var v = 2
+    println("The v=$v")
+
+    f.controlFlow(101, 901)
+
+    var clazz = AClass()
+    clazz.foo()
+
+    var clazzB = BClass("Simon")
+    clazzB.printClass()
+
+    println("\n--->> End <<---")
 
 }
 
