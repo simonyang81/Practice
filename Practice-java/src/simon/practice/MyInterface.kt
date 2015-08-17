@@ -23,8 +23,6 @@ class BClass constructor(arg:String) : MyInterface {
     }
 
     override fun foo() {
-
     }
-
 
 }
