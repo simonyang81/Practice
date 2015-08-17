@@ -60,6 +60,8 @@ fun main(arg: Array<String>) {
     testOE()
     testObjectSingleton()
 
+    testStoringPropertiesInAMap()
+
     println("\n--->> End <<---")
 
 }
@@ -85,12 +87,27 @@ fun testOE() {
 
 }
 
+/**
+ * Test Singleton
+ *
+ * An object declaration inside a class can be marked with the companion keyword
+ */
 fun testObjectSingleton() {
     val instance = MyClass.create()
     instance.foo()
 
-    val instance1 = MyClass1.getInstance();
+    val instance1 = MyClass1.getInstance()
     instance1.foo()
+}
+
+fun testStoringPropertiesInAMap() {
+
+    var clazz = SroringPropertiesInMap(mapOf(
+            "name" to "Simon",
+            "age" to 34))
+
+    clazz.printSelf()
+
 
 }
 
